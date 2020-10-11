@@ -4,10 +4,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Task_7 {
+
     private static Scanner scan = new Scanner(System.in);
     private static final int SIZE = 10;
 
     public static void main(String[] args) {
+        
         System.out.print("Введите первое число: ");
         int m = scan.nextInt();
         System.out.print("Введите второе число: ");
@@ -37,4 +39,5 @@ public class Task_7 {
         }
         return numbers;
     }
+
 }

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Task_1 {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Введите положительное число:");
@@ -18,5 +19,6 @@ public class Task_1 {
             System.out.println("Неверно введено число: ");
         }
         System.out.println(sum);
+
     }
 }

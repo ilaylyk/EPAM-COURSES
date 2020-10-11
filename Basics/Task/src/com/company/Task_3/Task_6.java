@@ -11,6 +11,7 @@ public class Task_6 {
 
         System.out.printf("Введите: m = ");
         int m = scanner.nextInt();
+
         System.out.printf("Введите: n = ");
         int n = scanner.nextInt();
 
