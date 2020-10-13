@@ -10,9 +10,9 @@ public class Task_5 {
         int t = scanner.nextInt();
 
         int s = t % 60;
-        t = (t - t % 60) / 60;
+        t = (t - s) / 60;
         int m = t % 60;
-        t = (t - t % 60) / 60;
+        t = (t - m) / 60;
 
         System.out.println(t + " ч " + m + " мин " + s + " с ");
     }
