@@ -14,7 +14,7 @@ public class Task_1 {
 
         if (firstAngle + secondAngle < 180) {
             System.out.println("Such triangle exists");
-            if (firstAngle == 90 || secondAngle == 90 || firstAngle + secondAngle == 180) {
+            if (firstAngle == 90 || secondAngle == 90 || firstAngle + secondAngle == 90) {
                 System.out.println("This is rectangular triangle");
             } else {
                 System.out.println("This triangle is not rectangular");
