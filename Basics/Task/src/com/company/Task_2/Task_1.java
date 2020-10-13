@@ -6,22 +6,21 @@ public class Task_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введите угол: FirstAngle");
-        int FirstAngle = scanner.nextInt();
+        System.out.println("Input corner: FirstAngle");
+        int firstAngle = scanner.nextInt();
 
-        System.out.println("Введите угол: SecondAngle");
-        int SecondAngle = scanner.nextInt();
+        System.out.println("Input corner: SecondAngle");
+        int secondAngle = scanner.nextInt();
 
-        if (FirstAngle + SecondAngle < 180){
-            System.out.println("Такой треугольник существует");
-            if (FirstAngle == 90 || SecondAngle == 90 || FirstAngle + SecondAngle == 180) {
-                System.out.println("Это треугольник прямоугольный");
+        if (firstAngle + secondAngle < 180) {
+            System.out.println("Such triangle exists");
+            if (firstAngle == 90 || secondAngle == 90 || firstAngle + secondAngle == 180) {
+                System.out.println("This is rectangular triangle");
             } else {
-                System.out.println("Это треугольник не прямоугольный");
+                System.out.println("This triangle is not rectangular");
             }
         } else {
-            System.out.println("Такого треугольника не существует:");
+            System.out.println("There is no such triangle:");
         }
-        scanner.close();
     }
 }
