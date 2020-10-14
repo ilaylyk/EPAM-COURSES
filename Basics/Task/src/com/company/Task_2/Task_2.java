@@ -18,6 +18,8 @@ public class Task_2 {
         System.out.println("Input: d");
         int d = scanner.nextInt();
 
+        scanner.close();
+
         int max = Math.max(Math.min(a, b), Math.min(c, d));
 
         System.out.println("max = " + max);

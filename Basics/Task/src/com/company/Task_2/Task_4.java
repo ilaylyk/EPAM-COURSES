@@ -20,6 +20,8 @@ public class Task_4 {
         System.out.print("z = ");
         double z = scanner.nextDouble();
 
+        scanner.close();
+
         double x1 = Math.min(x, Math.min(y, z));
         double z2 = Math.max(x, Math.max(y, z));
         double y3 = x + y + z - x1 - z2;

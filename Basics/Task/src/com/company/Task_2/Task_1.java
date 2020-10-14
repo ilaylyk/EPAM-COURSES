@@ -12,6 +12,8 @@ public class Task_1 {
         System.out.println("Input corner: SecondAngle");
         int secondAngle = scanner.nextInt();
 
+        scanner.close();
+
         if (firstAngle + secondAngle < 180) {
             System.out.println("Such triangle exists");
             if (firstAngle == 90 || secondAngle == 90 || firstAngle + secondAngle == 90) {

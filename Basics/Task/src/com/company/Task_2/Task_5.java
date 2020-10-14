@@ -9,6 +9,8 @@ public class Task_5 {
         System.out.println("Input: x");
         double x = scanner.nextDouble();
 
+        scanner.close();
+
         if (x <= 3) {
             System.out.println(Math.pow(x, 2) - 3 * x + 9);
         } else if (x > 3) {
