@@ -11,6 +11,8 @@ public class Task_6 {
         System.out.print("Input: n = ");
         int n = scanner.nextInt();
 
+        scanner.close();
+
         for (int i = m; i <= n; i++) {
             System.out.print(i + " : ");
             for (int j = 2; j < i; j++) {

@@ -8,6 +8,9 @@ public class Task_1 {
 
         System.out.println("Input positive number:");
         int a = scanner.nextInt();
+
+        scanner.close();
+
         int sum = 0;
 
         if (a > 0) {

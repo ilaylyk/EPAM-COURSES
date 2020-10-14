@@ -12,10 +12,12 @@ public class Task_2 {
         System.out.print("Input h = ");
         double h = scanner.nextDouble();
 
+        scanner.close();
+
         for (double i = a; i <= b; i += h) {
             if (i > 2) {
                 System.out.println("x = " + i + " y = " + i);
-            } else {
+            } else if (i <= 2) {
                 System.out.println("x = " + i + " y = " + (-i));
             }
         }

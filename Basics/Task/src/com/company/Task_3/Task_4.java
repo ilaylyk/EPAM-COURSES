@@ -1,12 +1,16 @@
 package com.company.Task_3;
 
 
+import java.math.BigInteger;
+
 public class Task_4 {
     public static void main(String[] args) {
-        int sum = 0;
-        for (int i = 0; i <= 200; i++) {
-            sum += Math.pow(i, 2);
+        BigInteger result = BigInteger.ONE;
+
+        for (int i = 1; i <= 200; i++) {
+            BigInteger bigInteger = BigInteger.valueOf(i);
+            result = result.multiply(bigInteger).multiply(bigInteger);
         }
-        System.out.println(sum);
+        System.out.println(result);
     }
 }
