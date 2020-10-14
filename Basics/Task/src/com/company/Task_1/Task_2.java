@@ -20,5 +20,6 @@ public class Task_2 {
         double c = scanner.nextDouble();
 
         System.out.println(calculating(a, b, c));
+        scanner.close();
     }
 }

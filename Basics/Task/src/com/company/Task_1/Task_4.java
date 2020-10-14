@@ -14,5 +14,6 @@ public class Task_4 {
         double a = scanner.nextDouble();
 
         System.out.println(calculating(a));
+        scanner.close();
     }
 }

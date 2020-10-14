@@ -15,5 +15,6 @@ public class Task_5 {
         t = (t - m) / 60;
 
         System.out.println(t + " ч " + m + " мин " + s + " с ");
+        scanner.close();
     }
 }

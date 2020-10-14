@@ -13,5 +13,6 @@ public class Task_6 {
         double y = scanner.nextDouble();
 
         System.out.println((x <= 4 && x >= -4) && (y <= 4 && y >= -3));
+        scanner.close();
     }
 }
