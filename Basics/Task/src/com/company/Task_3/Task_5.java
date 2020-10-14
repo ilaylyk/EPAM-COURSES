@@ -9,8 +9,8 @@ public class Task_5 {
         int quantity = scanner.nextInt();
         for (int i = 1; i <= quantity; i++) {
             System.out.print(i + " Symbol: ");
-            char Symbol = scanner.next().charAt(0);
-            System.out.print("Number: " + (int) Symbol);
+            char symbol = scanner.next().charAt(0);
+            System.out.print("Number: " + (int) symbol);
             System.out.println();
         }
         scanner.close();
