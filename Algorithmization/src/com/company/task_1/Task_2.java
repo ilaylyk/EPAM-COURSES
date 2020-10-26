@@ -3,7 +3,7 @@ package com.company.task_1;
 import java.util.Scanner;
 
 public class Task_2 {
-    public static int findSum(int[] array, int z) {
+    public static int findQuantity(int[] array, int z) {
         int result = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] > z) {
@@ -22,6 +22,6 @@ public class Task_2 {
 
         scanner.close();
 
-        System.out.println("Sum: " + findSum(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, z));
+        System.out.println("Sum: " + findQuantity(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, z));
     }
 }

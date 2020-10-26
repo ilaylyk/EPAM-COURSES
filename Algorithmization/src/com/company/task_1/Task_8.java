@@ -9,7 +9,7 @@ public class Task_8 {
     }
 
     private static int min(int[] a) {
-        return Arrays.stream(a).min().orElse(Integer.MIN_VALUE);
+        return Arrays.stream(a).min().orElseThrow(IllegalArgumentException::new);
     }
 
 

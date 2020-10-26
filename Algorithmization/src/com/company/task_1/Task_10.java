@@ -8,7 +8,6 @@ public class Task_10 {
             if (i % 2 != 0) {
                 array[i] = 0;
             }
-
         }
         for (int i : array) {
             System.out.print(i + "  ");

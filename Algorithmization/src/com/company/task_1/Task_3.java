@@ -19,7 +19,7 @@ public class Task_3 {
             }
         }
 
-        System.out.println("Sum pisitive:  " + resultPositive);
+        System.out.println("Number of positive:  " + resultPositive);
         System.out.println("Sum zero:  " + resultZero);
         System.out.println("Sum negative:  " + resultNegative);
     }
