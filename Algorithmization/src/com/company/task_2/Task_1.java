@@ -1,40 +1,36 @@
 package com.company.task_2;
 
-public class Task_1 {
-    public static void main(String[] args) {
-        int n = 5, m = 10;
-        int[][] array = new int[n][m];
+import java.util.Arrays;
 
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
+public class Task_1 {
+    public static void showArray(int[][] array) {
+        for (int[] ints : array) {
+            System.out.println(Arrays.toString(ints));
+        }
+    }
+
+    public static void randomArray(int[][] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
                 array[i][j] = (int) (Math.random() * 10);
             }
         }
+    }
 
-        System.out.println("Source matrix: ");
-        for (int[] x : array) {
-            for (int y : x) {
-                System.out.print(y + " ");
-            }
-            System.out.println();
-        }
+    public static void main(String[] args) {
+        int[][] array = new int[5][5];
 
-        int[] range = new int[m];
-        int count = 0;
-        for (int i = 0; i < m; i++) {
-            if (array[0][i] > array[n - 1][i] && i % 2 == 0) {
-                range[count++] = i;
-            }
-        }
+        randomArray(array);
 
-        System.out.println("Odd columns in which the first element is greater than the last: ");
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                for (int k = 0; k < count; k++) {
-                    if (j == range[k]) System.out.print(array[i][j] + " ");
+        showArray(array);
+
+        for (int i = 0; i < array.length; i = i + 2) {
+            if (array[0][i] > array[array.length - 1][i]) {
+                System.out.println("column " + (i + 1) + ": ");
+                for (int j = 0; j < array[i].length; j++) {
+                    System.out.println(array[j][i]);
                 }
             }
-            System.out.println();
         }
     }
 }
