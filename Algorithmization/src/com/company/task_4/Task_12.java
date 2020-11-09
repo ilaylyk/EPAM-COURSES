@@ -5,13 +5,13 @@ import java.util.Arrays;
 public class Task_12 {
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(getMass(8, 5, 10)));
+        System.out.println(Arrays.toString(buildArray(8, 5, 10)));
 
     }
 
-    public static int[] getMass(int k, int n, int massLength) {
-        int[] mass = new int[massLength];
-        for (int i = 0; i < massLength; i++) {
+    public static int[] buildArray(int k, int n, int arrayLength) {
+        int[] mass = new int[arrayLength];
+        for (int i = 0; i < arrayLength; i++) {
             mass[i] = getNumber(k, n);
         }
         return mass;

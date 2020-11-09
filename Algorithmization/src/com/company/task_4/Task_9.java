@@ -17,9 +17,9 @@ public class Task_9 {
         System.out.println("Quadrangle area: " + squareQuadrangle(x, y, z, t));
     }
 
-    public static double squareQuadrangle(double X, double Y, double Z, double T) {
-        double S = sqrt(pow(X, 2) + pow(Y, 2));
-        return squareRightTriangle(X, Y) + squareTriangleGeron(Z, T, S);
+    public static double squareQuadrangle(double x, double y, double z, double t) {
+        double s = sqrt(pow(x, 2) + pow(y, 2));
+        return squareRightTriangle(x, y) + squareTriangleGeron(z, t, s);
     }
 
     public static double squareTriangleGeron(double x, double y, double z) {

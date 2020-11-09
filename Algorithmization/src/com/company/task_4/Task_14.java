@@ -36,7 +36,7 @@ public class Task_14 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введите число");
+        System.out.println("Insert the number");
         int number = scanner.nextInt();
         scanner.close();
 

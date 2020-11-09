@@ -1,6 +1,6 @@
 package com.company.task_4;
 
-public class Task_6 {
+public class Task_6 extends Nod {
     public static void main(String[] args) {
         int a = 8;
         int b = 15;
@@ -13,10 +13,5 @@ public class Task_6 {
 
     public static boolean areCoprime(int a, int b, int c) {
         return nod(a, b) == 1 && nod(b, c) == 1 && nod(a, c) == 1;
-    }
-
-    public static int nod(int a, int b) {
-
-        return (b == 0) ? a : nod(b, a % b);
     }
 }

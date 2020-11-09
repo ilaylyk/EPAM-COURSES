@@ -8,12 +8,17 @@ public class Task_17 {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         scanner.close();
+
+        System.out.println("Number of operations until zero is reached: " + sumOperations(n));
+    }
+
+    public static int sumOperations(int n) {
         int count = 0;
         while (n != 0) {
             n -= sumOfDigits(n);
             count++;
         }
-        System.out.println("Number of operations until zero is reached: " + count);
+        return count;
     }
 
     public static int sumOfDigits(int num) {

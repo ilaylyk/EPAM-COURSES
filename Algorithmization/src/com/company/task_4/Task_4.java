@@ -3,7 +3,7 @@ package com.company.task_4;
 public class Task_4 {
     public static void main(String[] args) {
         double[][] a = {{1, 2, 3, 4}, {1, 6, 7, 9}};
-        System.out.printf("Наибольшее расстояние между двумя точками %.3f \n", getMaxDistance(a));
+        System.out.printf("Longest distance between two points %.3f \n", getMaxDistance(a));
 
     }
 

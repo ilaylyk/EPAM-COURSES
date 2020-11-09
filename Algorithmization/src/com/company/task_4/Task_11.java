@@ -12,10 +12,10 @@ public class Task_11 {
         int numTwo = scanner.nextInt();
         scanner.close();
 
-        inWhatNumberMore(numOne, numTwo);
+        printGreaterNumberCount(numOne, numTwo);
     }
 
-    public static void inWhatNumberMore(int numOne, int numTwo) {
+    public static void printGreaterNumberCount(int numOne, int numTwo) {
         if (countOfDigits(numOne) > countOfDigits(numTwo))
             System.out.println("The first number has more digits: ");
         else if (countOfDigits(numOne) < countOfDigits(numTwo))
