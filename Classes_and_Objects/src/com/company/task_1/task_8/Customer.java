@@ -4,13 +4,13 @@ package com.company.task_1.task_8;
 import java.math.BigInteger;
 
 public class Customer implements Comparable<Customer> {
-    private int id;
-    private String subName;
-    private String firstName;
-    private String patronymic;
-    private String address;
-    private long cardNumber;
-    private BigInteger bankAccountNumber;
+    int id;
+    String subName;
+    String firstName;
+    String patronymic;
+    String address;
+    long cardNumber;
+    BigInteger bankAccountNumber;
 
     public Customer(int id, String subName, String firstName, String patronymic, String address, long cardNumber, BigInteger bankAccountNumber) {
         this.id = id;
@@ -21,6 +21,7 @@ public class Customer implements Comparable<Customer> {
         this.cardNumber = cardNumber;
         this.bankAccountNumber = bankAccountNumber;
     }
+
 
     public void setId(int id) {
         this.id = id;

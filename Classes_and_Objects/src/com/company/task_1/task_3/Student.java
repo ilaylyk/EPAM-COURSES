@@ -1,17 +1,17 @@
 package com.company.task_1.task_3;
 
 public class Student {
-    private final String surNameInitials;
+    private final String surnameAndInitials;
     private final int groupNumber;
     private final int[] rating;
 
     public Student(String surNameInitials, int groupNumber, int[] rating) {
-        this.surNameInitials = surNameInitials;
+        this.surnameAndInitials = surNameInitials;
         this.groupNumber = groupNumber;
         this.rating = rating;
     }
 
-    private static void printGoodStudents(Student[] students) {
+    private static void printSuccessfulStudents(Student[] students) {
         for (Student student : students) {
             boolean isGood = true;
             for (int rating : student.rating) {
@@ -20,16 +20,13 @@ public class Student {
                     break;
                 }
             }
-            printSurNameAndGroupNumber(isGood, student);
+            if (isGood) {
+                System.out.println("Name: " + student.surnameAndInitials);
+                System.out.println("Group: " + student.groupNumber + "\n");
+            }
         }
     }
 
-    private static void printSurNameAndGroupNumber(boolean isGood, Student student) {
-        if (isGood) {
-            System.out.println("Name: " + student.surNameInitials);
-            System.out.println("Group: " + student.groupNumber + "\n");
-        }
-    }
 
     public static void main(String[] args) {
         Student[] students = new Student[]{
@@ -42,6 +39,6 @@ public class Student {
                 new Student("Silich I.I.", 114211, new int[]{2, 9, 6, 4, 10}),
                 new Student("Iodo J.A.", 114211, new int[]{9, 9, 10, 8, 10}),
         };
-        Student.printGoodStudents(students);
+        Student.printSuccessfulStudents(students);
     }
 }

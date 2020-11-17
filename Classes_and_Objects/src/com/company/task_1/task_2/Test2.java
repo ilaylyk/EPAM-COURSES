@@ -4,6 +4,11 @@ public class Test2 {
     private int a;
     private int b;
 
+    public Test2() {
+        this.a = 0;
+        this.b = 0;
+    }
+
     public Test2(int a, int b) {
         this.a = a;
         this.b = b;
@@ -23,10 +28,5 @@ public class Test2 {
 
     public int getB() {
         return b;
-    }
-
-    public Test2() {
-        this.a = 0;
-        this.b = 0;
     }
 }

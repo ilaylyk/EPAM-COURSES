@@ -1,14 +1,15 @@
 package com.company.task_1.task_9;
 
 public class Book {
-    private int id;
-    private String title;
-    private String author;
-    private String publishingHouse;
-    private int publishingYear;
-    private int pageCount;
-    private float price;
-    private String bindingType;
+    int id;
+    String title;
+    String author;
+    String publishingHouse;
+    int publishingYear;
+    int pageCount;
+    float price;
+    String bindingType;
+
 
     public Book(int id, String title, String author, String publishingHouse, int publishingYear, int pageCount, float price, String bindingType) {
         this.id = id;
