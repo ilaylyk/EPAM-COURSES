@@ -10,9 +10,8 @@ public class FlightSchedule {
         this.airlines = new ArrayList<>();
     }
 
-    public void addAirline(String destination, String flightNumber, String planeType, String departureTime,
-                           String[] dayOfWeek) {
-        airlines.add(new Airline(destination, flightNumber, planeType, departureTime, dayOfWeek));
+    public void addAirline(Airline airline) {
+        airlines.add(new Airline(airline.destinationPoint, airline.flightNumber, airline.planeType, airline.departureTime, airline.dayOfWeek));
     }
 
     public void findAirlinesToDestination(String destination) {

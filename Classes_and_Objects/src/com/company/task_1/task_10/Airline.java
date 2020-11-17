@@ -3,11 +3,11 @@ package com.company.task_1.task_10;
 import java.util.Arrays;
 
 public class Airline {
-    private String destinationPoint;
-    private String flightNumber;
-    private String planeType;
-    private String departureTime;
-    private String[] dayOfWeek;
+    String destinationPoint;
+    String flightNumber;
+    String planeType;
+    String departureTime;
+    String[] dayOfWeek;
 
     public Airline(String destinationPoint, String flightNumber, String planeType, String departureTime, String[] dayOfWeek) {
         this.destinationPoint = destinationPoint;

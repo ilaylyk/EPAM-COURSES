@@ -15,7 +15,7 @@ public class Train {
         this.departureTime = departureTime;
     }
 
-    private static void sortingTrainByNumber(Train[] trains) {
+    private static void sortTrainsByNumber(Train[] trains) {
         Train temp;
         for (int i = 0; i < trains.length; i++) {
             for (int j = 0; j < trains.length - 1; j++) {
@@ -83,10 +83,9 @@ public class Train {
                 new Train("Kiev", 225, "06:40"),
         };
 
-        System.out.println("informationOfTrain");
-        System.out.println(Train.informationOfTrain(trains, trainNumber));
+        System.out.println("Information about train " + Train.informationOfTrain(trains, trainNumber));
         System.out.println("sortingTrainByNumber");
-        Train.sortingTrainByNumber(trains);
+        Train.sortTrainsByNumber(trains);
         print(trains);
         System.out.println("sortTrainDestinationName");
         Train.sortTrainDestinationName(trains);
