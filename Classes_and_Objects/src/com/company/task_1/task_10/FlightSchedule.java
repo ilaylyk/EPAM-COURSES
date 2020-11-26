@@ -11,7 +11,7 @@ public class FlightSchedule {
     }
 
     public void addAirline(Airline airline) {
-        airlines.add(new Airline(airline.destinationPoint, airline.flightNumber, airline.planeType, airline.departureTime, airline.dayOfWeek));
+        airlines.add(airline);
     }
 
     public void findAirlinesToDestination(String destination) {

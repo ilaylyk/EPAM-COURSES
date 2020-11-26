@@ -10,8 +10,7 @@ public class SosediCustomers {
     }
 
     public void addCustomer(Customer customer) {
-        this.list.add(new Customer(customer.id, customer.subName, customer.firstName, customer.patronymic, customer.address, customer.cardNumber,
-                customer.bankAccountNumber));
+        this.list.add(customer);
     }
 
 

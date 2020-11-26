@@ -10,7 +10,7 @@ public class Bookshelf {
     }
 
     public void addBook(Book book) {
-        this.list.add(new Book(book.id, book.title, book.author, book.publishingHouse, book.publishingYear, book.pageCount, book.price, book.bindingType));
+        this.list.add(book);
     }
 
 
