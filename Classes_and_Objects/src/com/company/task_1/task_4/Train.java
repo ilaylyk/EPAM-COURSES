@@ -28,7 +28,7 @@ public class Train {
         }
     }
 
-    private static void sortTrainDestinationName(Train[] trains) {
+    private static void sortTrainsByDestinationName(Train[] trains) {
         Train temp;
         for (int i = 0; i < trains.length; i++) {
             for (int j = 0; j < trains.length - 1; j++) {
@@ -47,8 +47,7 @@ public class Train {
         }
     }
 
-    private static Train informationOfTrain(Train[] trains, int trainNumber) {
-
+    private static Train searchTrainByNumber(Train[] trains, int trainNumber) {
         for (Train train : trains) {
             if (train.trainNumber == trainNumber) {
                 return train;
@@ -83,12 +82,12 @@ public class Train {
                 new Train("Kiev", 225, "06:40"),
         };
 
-        System.out.println("Information about train " + Train.informationOfTrain(trains, trainNumber));
+        System.out.println("Information about train " + Train.searchTrainByNumber(trains, trainNumber));
         System.out.println("sortingTrainByNumber");
         Train.sortTrainsByNumber(trains);
         print(trains);
         System.out.println("sortTrainDestinationName");
-        Train.sortTrainDestinationName(trains);
+        Train.sortTrainsByDestinationName(trains);
         print(trains);
     }
 }
