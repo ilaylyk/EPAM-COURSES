@@ -1,7 +1,7 @@
 package com.company.task_2.task_5;
 
 public class Client {
-    private static int id = 1;
+    private int id = 1;
     private int clientId;
     private String firstName;
     private String lastName;

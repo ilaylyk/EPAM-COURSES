@@ -5,13 +5,13 @@ import java.math.BigInteger;
 public class Account {
     private final BigInteger accountNumber;
     private final String currency;
-    private final boolean status;
+    private final boolean isActive;
     private int amount;
 
     public Account(String accountNumber, String currency, int amount) {
         this.accountNumber = new BigInteger(accountNumber);
         this.currency = currency;
-        this.status = true;
+        this.isActive = true;
         this.amount = amount;
     }
 
@@ -31,7 +31,7 @@ public class Account {
     public String toString() {
         return "accountNumber= " + accountNumber +
                 ", currency= " + currency +
-                ", status= " + status +
+                ", status= " + isActive +
                 ", amount= " + amount;
     }
 }

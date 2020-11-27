@@ -1,8 +1,7 @@
 package com.company.task_2.task_5;
 
 public class Tour {
-    private static int id = 100;
-    private int tourId;
+    private int id;
     private String country;
     private TypeOfTour type;
     private Transport transport;
@@ -10,15 +9,15 @@ public class Tour {
     private int numberOfDays;
     private double price;
 
-    public Tour(String country, TypeOfTour type, Transport transport, Food food, int numberOfDays, double price) {
-        this.tourId = id;
+    public Tour(int id, String country, TypeOfTour type, Transport transport, Food food, int numberOfDays, double price) {
+        this.id = id;
         this.country = country;
         this.type = type;
         this.transport = transport;
         this.food = food;
         this.numberOfDays = numberOfDays;
         this.price = price;
-        id++;
+
     }
 
     public String getCountry() {
@@ -69,18 +68,18 @@ public class Tour {
         this.price = price;
     }
 
-    public int getTourId() {
-        return tourId;
+    public int getId() {
+        return id;
     }
 
-    public void setTourId(int tourId) {
-        this.tourId = tourId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override
     public String toString() {
         return
-                "id= " + tourId +
+                "id= " + id +
                         ", country= " + country +
                         ", type= " + type +
                         ", transport= " + transport +

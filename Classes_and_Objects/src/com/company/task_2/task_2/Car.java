@@ -4,7 +4,7 @@ public class Car {
     private final Engine engine;
     private final Wheel[] wheels;
     private int tank;
-    private final int MAX_TANK_CAPACITY = 100;
+    private final static int MAX_TANK_CAPACITY = 100;
     private final String name;
 
     public Car(String name, Engine engine, Wheel[] wheels) throws CarCreateException {

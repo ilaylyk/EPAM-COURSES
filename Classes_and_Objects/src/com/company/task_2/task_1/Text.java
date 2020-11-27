@@ -4,14 +4,13 @@ import java.util.ArrayList;
 
 public class Text {
     private final Word heading;
-    private final ArrayList<Sentence> content;
+    private final ArrayList<String> content = new ArrayList<>();
 
     public Text(Word heading) {
         this.heading = heading;
-        this.content = new ArrayList<>();
     }
 
-    public void addSentence(Sentence sentence) {
+    public void addSentence(String sentence) {
         this.content.add(sentence);
     }
 

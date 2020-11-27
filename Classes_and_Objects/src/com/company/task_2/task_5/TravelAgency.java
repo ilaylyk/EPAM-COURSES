@@ -39,7 +39,7 @@ public class TravelAgency {
 
     public Tour getTourById(int id) {
         for (Tour tour : tours) {
-            if (tour.getTourId() == id) {
+            if (tour.getId() == id) {
                 return tour;
             }
         }
