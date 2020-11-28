@@ -5,17 +5,17 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Calendar {
-    private final List<Holyday> holydays;
+    private final List<Holiday> holydays;
 
     public Calendar() {
         holydays = new ArrayList<>();
     }
 
-    private static class Holyday {
+    private static class Holiday {
         String title;
         LocalDate date;
 
-        public Holyday(String title, LocalDate date) {
+        public Holiday(String title, LocalDate date) {
             this.title = title;
             this.date = date;
         }
@@ -26,14 +26,14 @@ public class Calendar {
     }
 
     public void addHolyday(String title, LocalDate date) {
-        holydays.add(new Holyday(title, date));
+        holydays.add(new Holiday(title, date));
         System.out.println("Added holyday: " + title + ", date = " + date);
     }
 
     public void printHolydaysInRange(LocalDate from, LocalDate to) {
         System.out.println("Holydays in range: from " + from + ", to " + to);
-        for (Holyday holyday : holydays) {
-            if (holyday.date.compareTo(from) > 0 && holyday.date.compareTo(to) < 0) {
+        for (Holiday holyday : holydays) {
+            if (holyday.date.isAfter(from) && holyday.date.isBefore(to)) {
                 System.out.println(holyday);
             }
         }

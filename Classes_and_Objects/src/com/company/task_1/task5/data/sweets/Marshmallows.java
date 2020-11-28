@@ -1,6 +1,6 @@
 package com.company.task_1.task5.data.sweets;
 
-public class Marshmallows extends Sweets {
+public class Marshmallows extends Sweetness {
     private int cost = 35;
 
     public String getName() {

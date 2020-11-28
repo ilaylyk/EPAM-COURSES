@@ -4,7 +4,7 @@ import com.company.task_1.task5.data.Present;
 import com.company.task_1.task5.data.packaging.Box;
 import com.company.task_1.task5.data.packaging.material.Color;
 import com.company.task_1.task5.data.packaging.material.TypeBoxMaterial;
-import com.company.task_1.task5.data.sweets.Sweets;
+import com.company.task_1.task5.data.sweets.Sweetness;
 
 
 import java.util.Scanner;
@@ -38,7 +38,7 @@ public class Application {
             in.next();
         }
         choiceMaterial = in.next();
-        type = TypeBoxMaterial.choiceMaterial(choiceMaterial);
+        type = TypeBoxMaterial.fromStringTypeBoxMaterial(choiceMaterial);
 
         System.out.print("\nSelect the color of the package" + "\n1 - red, 2 - green, 3 - white, 4 - blue, 5 - yellow"
                 + "\nInsert the number: ");
@@ -49,7 +49,7 @@ public class Application {
             in.next();
         }
         choiceColor = in.next();
-        color = Color.choiceColor(choiceColor);
+        color = Color.fromString(choiceColor);
 
         return new Box(type, color);
     }
@@ -67,7 +67,7 @@ public class Application {
 
             String choiceSweet = in.next();
 
-            Sweets sweet = sweetFactory.getSweets(choiceSweet);
+            Sweetness sweet = sweetFactory.getSweets(choiceSweet);
             coolPresent.addSweets(sweet);
 
             System.out.println("Maybe something else tasty?:)\n>>");

@@ -3,8 +3,8 @@ package com.company.task_1.task5.logic;
 import com.company.task_1.task5.data.sweets.*;
 
 public class SweetFactory {
-    public Sweets getSweets(String name) {
-        Sweets toReturn = null;
+    public Sweetness getSweets(String name) {
+        Sweetness toReturn = null;
 
         switch (name) {
             case "candy":

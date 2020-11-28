@@ -29,9 +29,10 @@ public abstract class File {
         this.fileName = fileName;
     }
 
-
     @Override
     public String toString() {
-        return fileName;
+        return "File{" +
+                "fileName='" + fileName + '\'' +
+                '}';
     }
 }

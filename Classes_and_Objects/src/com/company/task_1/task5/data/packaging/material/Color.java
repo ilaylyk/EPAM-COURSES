@@ -1,39 +1,18 @@
 package com.company.task_1.task5.data.packaging.material;
 
 public enum Color {
-    RED, GREEN, WHITE, BLUE, YELLOW;
+    RED("red"), GREEN("green"), WHITE("white"), BLUE("blue"), YELLOW("yellow");
 
-    public static Color choiceColor(String color) {
-        switch (color) {
-            case "red":
-                return Color.RED;
-            case "green":
-                return Color.GREEN;
-            case "white":
-                return Color.WHITE;
-            case "blue":
-                return Color.BLUE;
-            case "yellow":
-                return Color.YELLOW;
-            default:
-                return Color.RED;
-        }
+    Color(String name) {
+        this.name = name;
     }
 
-    public String printColor() {
-        switch (this) {
-            case RED:
-                return "red";
-            case GREEN:
-                return "green";
-            case WHITE:
-                return "white";
-            case BLUE:
-                return "blue";
-            case YELLOW:
-                return "yellow";
-            default:
-                return "color not selected";
+    public String name;
+
+    public static Color fromString(String value) {
+        for (Color color : Color.values()) {
+            if (color.name.equals(value)) return color;
         }
+        throw new IllegalArgumentException("Unknown color");
     }
 }

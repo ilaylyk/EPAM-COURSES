@@ -1,18 +1,10 @@
 package com.company.task_1.task5.data.sweets;
 
-public class Biscuit extends Sweets {
-    private int cost = 15;
-
-    public String getName() {
-        return "biscuit";
-    }
+public class Biscuit extends Sweetness {
+    private static int cost = 15;
 
     public int getCost() {
         return cost;
-    }
-
-    public void setCost(int cost) {
-        this.cost = cost;
     }
 
     @Override

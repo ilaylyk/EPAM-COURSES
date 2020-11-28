@@ -1,13 +1,13 @@
 package com.company.task_1.task5.data;
 
 import com.company.task_1.task5.data.packaging.Box;
-import com.company.task_1.task5.data.sweets.Sweets;
+import com.company.task_1.task5.data.sweets.Sweetness;
 
 
 import java.util.ArrayList;
 
 public class Present {
-    private final ArrayList<Sweets> sweets = new ArrayList<>();
+    private final ArrayList<Sweetness> sweets = new ArrayList<>();
     private Box box;
 
     public Present(Box box) {
@@ -22,17 +22,17 @@ public class Present {
         this.box = box;
     }
 
-    public ArrayList<Sweets> getSweets() {
+    public ArrayList<Sweetness> getSweets() {
         return sweets;
     }
 
-    public void addSweets(Sweets sweet) {
+    public void addSweets(Sweetness sweet) {
         sweets.add(sweet);
     }
 
     public int sumCost() {
         int sum = 0;
-        for (Sweets x : sweets) {
+        for (Sweetness x : sweets) {
             sum += x.getCost();
         }
         return sum;

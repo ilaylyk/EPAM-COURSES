@@ -1,7 +1,7 @@
 package com.company.task_1.task5.data.sweets;
 
-public class Marmalade extends Sweets {
-    private int cost = 40;
+public class Marmalade extends Sweetness {
+    private static int cost = 40;
 
     public String getName() {
         return "marmalade";
@@ -12,7 +12,7 @@ public class Marmalade extends Sweets {
     }
 
     public void setCost(int cost) {
-        this.cost = cost;
+        Marmalade.cost = cost;
     }
 
     @Override

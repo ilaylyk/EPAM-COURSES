@@ -1,13 +1,13 @@
 package com.company.task_1.task5.data.sweets;
 
-public class Sweets {
+public class Sweetness {
     private String name;
     private int cost;
 
-    public Sweets() {
+    public Sweetness() {
     }
 
-    public Sweets(String name, int cost) {
+    public Sweetness(String name, int cost) {
         this.name = name;
         this.cost = cost;
     }
@@ -45,7 +45,7 @@ public class Sweets {
         if (obj == null || this.getClass() != obj.getClass()) {
             return false;
         }
-        Sweets other = (Sweets) obj;
+        Sweetness other = (Sweetness) obj;
         if (name == null) {
             if (other.name != null) {
                 return false;
