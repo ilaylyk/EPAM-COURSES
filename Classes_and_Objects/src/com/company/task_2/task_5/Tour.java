@@ -17,7 +17,6 @@ public class Tour {
         this.food = food;
         this.numberOfDays = numberOfDays;
         this.price = price;
-
     }
 
     public String getCountry() {

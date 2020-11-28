@@ -22,7 +22,7 @@ public class TravelAgency {
 
     public Client getClientById(int id) {
         for (Client client : clients) {
-            if (client.getClientId() == id) {
+            if (client.getId() == id) {
                 return client;
             }
         }

@@ -2,13 +2,11 @@ package com.company.task_2.task_5;
 
 public class Client {
     private int id = 1;
-    private int clientId;
     private String firstName;
     private String lastName;
     private Tour tour;
 
     public Client(String firstName, String lastName) {
-        clientId = id;
         this.firstName = firstName;
         this.lastName = lastName;
         id++;
@@ -38,17 +36,17 @@ public class Client {
         this.lastName = lastName;
     }
 
-    public int getClientId() {
-        return clientId;
+    public int getId() {
+        return id;
     }
 
-    public void setClientId(int clientId) {
-        this.clientId = clientId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override
     public String toString() {
-        return "id=" + clientId +
+        return "id=" + id +
                 ", firstName= " + firstName +
                 ", lastName= " + lastName +
                 ", tour: " + tour;
